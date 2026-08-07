@@ -2,10 +2,10 @@ cask "brewstore" do
   version "1.0.0"
   sha256 "3a89c216a6de8aa1589b7e7f48fdbc3a61222088f82ba5c6effa6684311de81e"
 
-  url "https://github.com/amfi-disable/BrewStore/releases/download/v1.0.0/brewstore-1.0.0.dmg"
+  url "https://brewstore-kohl.vercel.app/downloads/brewstore-1.0.0.dmg"
   name "BrewStore"
   desc "A focused Homebrew package manager for macOS"
-  homepage "https://github.com/amfi-disable/BrewStore"
+  homepage "https://brewstore-kohl.vercel.app/"
 
   app "BrewStore.app"
 
