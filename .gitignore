@@ -1,1 +1,102 @@
+# ==============================================================================
+# Homebrew-BrewStore .gitignore
+# ==============================================================================
+# Controls file visibility and repository hygiene:
+# - Hides transient build artifacts, machine-specific caches, editor states, and secrets.
+# - Preserves active working files, configuration definitions, and tap casks.
+# ==============================================================================
+
+# ==============================================================================
+# SECTION 1: WORKING & PRESERVED FILES (Explicit Whitelists)
+# (Guarantees vital project sources, configs, and assets are preserved)
+# ==============================================================================
+
+# Core Documentation & Licensing
+!readme*.md
+!changelog.md
+!license
+!.gitignore
+
+# Whitelist Homebrew Casks
+!casks/
+!casks/*.rb
+!Casks/
+!Casks/*.rb
+
+# ==============================================================================
+# SECTION 2: HIDDEN & IGNORED ARTIFACTS
+# (Local caches, intermediate builds, user states, credentials, diagnostics)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 2.1 macOS System & Volume Metadata
+# ------------------------------------------------------------------------------
 .DS_Store
+.DS_Store?
+.ds_store
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+Icon?
+
+# ------------------------------------------------------------------------------
+# 2.2 Local Homebrew Test, Download & Bottle Caches
+# ------------------------------------------------------------------------------
+.brew/
+bottles/
+*.bottle.*
+*.tar.gz
+*.tgz
+*.zip
+*.dmg
+*.pkg
+
+# ------------------------------------------------------------------------------
+# 2.3 Environment Secrets, Private Keys & Tokens
+# ------------------------------------------------------------------------------
+.env
+.env.*
+*.key
+*.pem
+*.token
+credentials.json
+token.json
+*secret*
+
+# ------------------------------------------------------------------------------
+# 2.4 Diagnostics, Logs & Telemetry
+# ------------------------------------------------------------------------------
+*.log
+logs/
+
+# ------------------------------------------------------------------------------
+# 2.5 IDEs, Text Editors & AI Agent Working Contexts
+# ------------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.gemini/
+.claude/
+.cursor/
+.windsurf/
+.codex/
+antigravity.json
+.nodeterm/
+
+# ------------------------------------------------------------------------------
+# 2.6 Temporary Files, Scratchpads & Working Notes
+# ------------------------------------------------------------------------------
+*.tmp
+*.temp
+*.bak
+tmp/
+temp/
+scratch/
+task.md
+todo.md
+plan.md
+report.md
