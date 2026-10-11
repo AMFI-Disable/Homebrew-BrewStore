@@ -8,7 +8,7 @@ cask "brewstore" do
   homepage "https://github.com/AMFI-Disable/BrewStore"
 
   auto_updates true
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "BrewStore.app"
   binary "#{appdir}/BrewStore.app/Contents/Resources/scripts/brewstore", target: "brewstore"
